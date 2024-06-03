@@ -22,7 +22,7 @@ def script_generator(subject, video_length, creativity):
        ]
    )
 
-   model = ChatOpenAI(model="gpt-4o", openai_api_key = "sk-OalU6JpC0YTzmYciAb336dAcB8854dCcAc777499C991Df1f",
+   model = ChatOpenAI(model="gpt-3.5-turbo", openai_api_key = "sk-OalU6JpC0YTzmYciAb336dAcB8854dCcAc777499C991Df1f",
                       openai_api_base="https://api.aigc369.com/v1", temperature=creativity)
    title_chain = title_template | model
    body_chain = body_template | model
